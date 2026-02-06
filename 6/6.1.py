@@ -1,11 +1,10 @@
-number = input()
+import string
 
-while len(number) > 1:
-    result = 1
+letters = string.ascii_lowercase + string.ascii_uppercase
 
-    for digit in number:
-        result *= int(digit)
+user_input = input("Введіть дві букви через дефіс (наприклад a-c): ")
 
-    number = str(result)
+start, end = user_input.split('-')
 
-print(number)
+print(letters[letters.index(start):letters.index(end)+1])
+
