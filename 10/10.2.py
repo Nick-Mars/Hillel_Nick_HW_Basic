@@ -5,6 +5,7 @@ def first_word(text):
     if match:
         return match.group(0)
     return ""
+
 assert first_word("Hello world") == "Hello", 'Test_1'
 assert first_word("greetings, friends") == "greetings", 'Test_2'
 assert first_word("don't touch it") == "don't", 'Test_3'
